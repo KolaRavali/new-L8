@@ -1,26 +1,24 @@
 {
   "development": {
-    "username": "ravali",
-    "password": "ravali",
-    "database": "todo_db_express",
+    "username": "postgres",
+    "password": "postgres",
+    "database": "todo_l6",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "ravali",
-    "password": "ravali",
-    "database": "todo_db_express_test",
+    "username": "postgres",
+    "password": "postgres",
+    "database": "todo_l6_test",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "logging": false
   },
   "production": {
-    "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres",
-    "dialectOptions": {
-      "ssl": {
-        "require": true,
-        "rejectUnauthorized": false
-      }
-    }
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   }
 }
